@@ -1,0 +1,9 @@
+version: "3"
+
+services: 
+  app:
+    image: node:14
+    volumes: 
+      - .:/blockchain
+    working_dir: /blockchain
+    entrypoint: npm run dev
